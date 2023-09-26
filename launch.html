@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAUNCH!</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('assets/img/launchBG.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      font-family: Arial, sans-serif;
+    }
+    
+    #launchButtonContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    #launchImage {
+      width: Auto;
+      height: 150px;
+      padding-bottom: 20px;
+    }
+    
+    #launchButton {
+      width: 200px;
+      height: 200px;
+      border: none;
+      border-radius: 50%;
+      background-color: #7b28bf;
+      color: white;
+      font-size: 32px;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.2s, font-size 0.2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      border-style:solid;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    }
+    
+    #launchButton:hover {
+      background-color: #784534;
+      transform: scale(1.05);
+      font-size: 36px;
+    }
+    
+    @keyframes electrify {
+      0%, 100% {
+        transform: scale(1);
+      }
+      25%, 75% {
+        transform: scale(1.2);
+      }
+      50% {
+        transform: scale(0.8);
+      }
+    }
+  </style>
+  <script>
+    function startCountdown(button) {
+      // Start the countdown
+      let countdown = 5;
+      button.innerText = countdown;
+      const countdownInterval = setInterval(() => {
+        countdown--;
+        if (countdown >= 1) {
+          button.innerText = countdown;
+        } else {
+          clearInterval(countdownInterval);
+          button.innerText = 'LAUNCH!';
+          electrifyAnimation(button);
+        }
+      }, 1000);
+    }
+
+    function electrifyAnimation(button) {
+      // Set the URL of the new website
+      const newWebsiteURL = 'https://foe.kdu.ac.lk/electrical/pes-kdu/';
+      
+      // Redirect to the new website in the same tab
+      window.location.href = newWebsiteURL;
+      
+      // Apply the electrifying animation to the button
+      button.style.animation = 'electrify 1s ease-in-out';
+      
+      // Reset the animation after it completes
+      button.addEventListener('animationend', function() {
+        button.style.animation = '';
+        button.innerText = 'LAUNCH!';
+      });
+    }
+  </script>
+</head>
+<body>
+  <div id="launchButtonContainer">
+    <img src="assets/img/logos.png" id="launchImage" alt="Launch Image">
+    <button id="launchButton" onclick="startCountdown(this)">LAUNCH!</button>
+  </div>
+</body>
+</html>
