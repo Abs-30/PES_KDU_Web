@@ -15194,9 +15194,7 @@ body {
     }
 }
 
-.projects-section {
-    padding: 10rem 0;
-}
+
 
 .projects-section .featured-text {
     padding: 2rem;
@@ -15292,7 +15290,7 @@ body {
 
 .bsc-carousel1 .carousel-item {
     min-height: 500px;
-    background-color: yellow;
+
 }
 
 .carousel {
@@ -15306,7 +15304,7 @@ body {
 }
 
 .carousel-item img {
-    border-radius: 10px;
+    
     object-fit: cover;
     height: 500px;
 }
