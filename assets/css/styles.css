@@ -15297,22 +15297,24 @@ body {
     padding: 5rem 0;
 }
 
+
 .bsc-carousel1 .carousel-item {
     min-height: 500px;
 
 }
 
-.carousel {
+
+#carouselDark .carousel {
     height: auto;
 }
 
-.carousel-item {
+#carouselDark .carousel-item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.carousel-item img {
+#carouselDark .carousel-item img {
     
     object-fit: cover;
     height: 77vh;
@@ -15320,12 +15322,12 @@ body {
     
 }
 
-.carousel-item img:hover {
+#carouselDark .carousel-item img:hover {
     transform: scale(1.02);
     
 }
 
-.carousel-item::after {
+#carouselDark .carousel-item::after {
     content: "";
     position: absolute;
     top: 60%;
@@ -15338,7 +15340,7 @@ body {
 
 
   
-.carousel-fade {
+#carouselDark .carousel-fade {
     .carousel-inner {
         .item {
             transition-property: opacity;
@@ -15544,3 +15546,89 @@ body {
     }
 }
 
+#carouselTeam .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    height: 520px;
+    
+  }
+  #carouselTeam .carousel-inner {
+    padding: 1em;
+  }
+
+  #carouselTeam .card-title {
+    border-radius: 10px;
+    background-color: white;
+    
+    justify-content: center ;
+    padding: 10px;
+  }
+
+  #carouselTeam .carousel-control-prev,
+  #carouselTeam .carousel-control-next {
+    background-color: #656565;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #carouselTeam .carousel-control-prev span,
+  .carousel-control-next span {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  
+
+  
+  @media screen and (min-width: 577px) {
+    #carouselTeam .cards-wrapper {
+      display: flex;
+    }
+    #carouselTeam .card {
+      margin: 0 0.5em;
+      width: calc(100% / 2);
+    }
+    #carouselTeam .image-wrapper {
+      height: 20vw;
+      margin: 0 auto;
+    }
+  }
+
+  #carouselTeam .image-wrapper {
+    margin-bottom: 75px;
+  }
+  
+  #carouselTeam .image-wrapper img {
+    margin-top: 30px;
+    max-width: 100%;
+    max-height: 130%;
+    border-radius: 10px;
+  }
+
+
+  @media screen and (max-width: 576px) {
+    #carouselTeam .card:not(:first-child) {
+      display: none;
+    
+    }
+
+    #carouselTeam .card {
+        height: 55vh;
+      }
+
+      #carouselTeam .image-wrapper img {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+      }
+
+      #carouselTeam .image-wrapper {
+        margin-bottom: -10px;
+      }
+    
+    
+  }

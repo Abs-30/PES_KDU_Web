@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="assets/css/Bold-BS4-Image-Caption-Hover-Effect-3.css">
 
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="TklUsDNDTHFRGXudwE_WtMULIBp3xPF21lt9tCHYcOU"/>
 
@@ -30,7 +33,7 @@
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#page-top"><img class="navbar-logo" src="assets/img/3.png" alt="Logo" width="64" height="80"> PES KDU </a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation"><span> Menu </span><i class="fas fa-bars"></i></button>
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars-staggered fa-lg"></i></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about"><b>About</b></a></li>
@@ -82,12 +85,12 @@
     
     <section class="bg-light projects-section" id="projects" >
         <div class="bsc-carousel1">
-            <div id="carouselExampleDark" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div id="carouselDark" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button class="active" type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button class="active" type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                     <h1 style="text-align: center;font-family: 'DM Sans', sans-serif;font-weight: bold;margin-top: 22px;padding-bottom: 5px;padding-top: 15px;margin-bottom: 12px;">Events</h1>
@@ -115,8 +118,8 @@
                             <p>A visit organized to the hydropower plant of the samanalawewa reservoir</p>
                         </div>
                     </div>
-                </div><button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev"><i class="fa-solid fa-circle-arrow-left fa-2xl shadow-right-carousel"></i><span aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next"><i class="fa-solid fa-circle-arrow-right fa-2xl shadow-left-carousel"></i><span aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                </div><button class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev"><i class="fa-solid fa-circle-arrow-left fa-2xl shadow-right-carousel"></i><span aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next"><i class="fa-solid fa-circle-arrow-right fa-2xl shadow-left-carousel"></i><span aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
             </div>
         </div>
         <div class="container-fluid py-5" style="margin-top: -30px;">
@@ -181,22 +184,34 @@
             </div>
         </div>
 
+          
 
         </div>
         <section></section>
         <section></section>
     </section>
-    <section class="about-section" id="team" style="padding-bottom:0px;margin-bottom:2px;height:404.4px;padding-top:16px;margin-top:-20px;background:#262525;border-color:var(--bs-border-color-translucent);color:#050044;">
+    <section class="about-section bg-dark" id="team" style="padding-bottom:0px;margin-bottom:2px;padding-top:16px;margin-top:-20px;;border-color:var(--bs-border-color-translucent);color:#050044;">
         <section class="py-4 py-xl-5">
             <div class="container">
-                <div class="text-white bg-dark border-0 border rounded p-4 p-md-5">
+                <div class="text-white bg-dark border-0 border rounded ">
                     <h2 class="fw-bold text-white mb-3" style="font-family: 'DM Sans', sans-serif;font-weight: bold">OUR TEAM</h2>
                     <p class="mb-4" style="font-family: 'DM Sans', sans-serif;">The executive committee and the board of directors for the year 2023/24</p>
-                    <div class="my-3"><a class="btn btn-primary btn-lg me-2" role="button" href="Pages/Team/teams-2023-24.html">View members</a></div>
+                    <div id="team-placeholder">
+                    </div>
+            
+                    <script>
+                      $.get("/Pages/Team/teamcarousel.html", function(data){
+                          $("#team-placeholder").replaceWith(data);
+                      });
+                  </script>
+            
+                    <div class="text-center mt-5 mb-3"><a class="btn btn-primary btn-lg me-2" role="button" href="Pages/Team/teams-2023-24.html">View all members</a></div>
                 </div>
+                
             </div>
+            
         </section>
-        <div></div>
+        
     </section>
     <h2 class="fw-bold text-white mb-3" id="signup" style="text-align:center;font-family:'DM Sans', sans-serif;">Contacts</h2>
     <section class="bg-black contact-section" style="padding-top:90px;background:linear-gradient(#050044, #050044), var(--bs-indigo);margin-top:-80px;padding-bottom:0px;margin-bottom:19px;">
