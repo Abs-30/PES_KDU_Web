@@ -4811,6 +4811,8 @@ fieldset:disabled .btn {
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
 
+
+
 .navbar>.container,
 .navbar>.container-fluid,
 .navbar>.container-sm,
@@ -7512,7 +7514,10 @@ fieldset:disabled .btn {
     border: 0;
     opacity: 0.5;
     transition: opacity 0.15s ease;
+    
+    
 }
+
 
 @media (prefers-reduced-motion: reduce) {
     .carousel-control-prev,
@@ -7529,16 +7534,20 @@ fieldset:disabled .btn {
     text-decoration: none;
     outline: 0;
     opacity: 0.9;
+    transform: scale(1.1);
 }
 
 .carousel-control-prev {
     left: 0;
+    
 }
 
 .carousel-control-next {
     right: 0;
 }
-
+.carousel-control-prev {
+    left: 0;
+}
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     display: inline-block;
@@ -7620,6 +7629,8 @@ fieldset:disabled .btn {
     padding-bottom: 1.25rem;
     color: #fff;
     text-align: center;
+    z-index: 100;
+    text-shadow: 0px 2px 4px rgb(0, 0, 32);
 }
 
 .carousel-dark .carousel-control-prev-icon,
@@ -15194,9 +15205,7 @@ body {
     }
 }
 
-.projects-section {
-    padding: 10rem 0;
-}
+
 
 .projects-section .featured-text {
     padding: 2rem;
@@ -15290,28 +15299,63 @@ body {
     padding: 5rem 0;
 }
 
+
 .bsc-carousel1 .carousel-item {
     min-height: 500px;
-    background-color: yellow;
+
 }
 
-.carousel {
+
+#carouselDark .carousel {
     height: auto;
 }
 
-.carousel-item {
+#carouselDark .carousel-item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.carousel-item img {
-    border-radius: 10px;
+#carouselDark .carousel-item img {
+    
     object-fit: cover;
-    height: 500px;
+    height: 77vh;
+    transition: 1s;
+    
 }
 
-.carousel-fade {
+#carouselDark .carousel-item img:hover {
+    transform: scale(1.02);
+    
+}
+
+#carouselDark .carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.799), rgba(0, 0, 0, 0));
+  }
+
+
+  #carouselDark .shadow-right-carousel:hover {
+    color: #32cd32;
+
+  }
+
+  #carouselDark .shadow-left-carousel:hover {
+    color: #32cd32;
+
+  }
+
+
+
+
+
+  
+#carouselDark .carousel-fade {
     .carousel-inner {
         .item {
             transition-property: opacity;
@@ -15516,3 +15560,115 @@ body {
         transform: rotate(360deg);
     }
 }
+
+#carouselTeam .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.58);
+    height: auto;
+    
+  }
+  #carouselTeam .carousel-inner {
+    padding: 1em;
+  }
+
+  #carouselTeam .card-title {
+    border-radius: 10px;
+    background-color: white;
+    
+    justify-content: center ;
+    padding: 10px;
+  }
+
+  #carouselTeam .carousel-control-prev,
+  #carouselTeam .carousel-control-next {
+    background-color: #001000;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #carouselTeam .shadow-right-carousel {
+    margin-left: .8vh;
+
+  }
+
+  #carouselTeam .shadow-right-carousel:hover {
+    color: #32cd32;
+
+  }
+
+  #carouselTeam .shadow-left-carousel {
+    margin-left: .8vh;
+
+  }
+  #carouselTeam .shadow-left-carousel:hover {
+    color: #32cd32;
+
+  }
+
+  #carouselTeam .carousel-control-prev span,
+  .carousel-control-next span {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  
+
+  
+  @media screen and (min-width: 577px) {
+    #carouselTeam .cards-wrapper {
+      display: flex;
+    }
+    #carouselTeam .card {
+      margin: 0 0.5em;
+      width: calc(100% / 2);
+    }
+    #carouselTeam .image-wrapper {
+      height: 20vw;
+      margin: 0 auto;
+    }
+  }
+
+  #carouselTeam .image-wrapper {
+    margin-bottom: 85px;
+  }
+
+  #carouselTeam .card-body p {
+    margin-top: -15px;
+  }
+  
+  #carouselTeam .image-wrapper img {
+    margin-top: 30px;
+    max-width: 100%;
+    max-height: 130%;
+    border-radius: 10px;
+  }
+
+
+  @media screen and (max-width: 576px) {
+    #carouselTeam .card:not(:first-child) {
+      display: none;
+    
+    }
+
+    #carouselTeam .card {
+        
+      }
+
+      #carouselTeam .image-wrapper img {
+        margin-top: 20px;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+      }
+
+      #carouselTeam .image-wrapper {
+        margin-bottom: -10px;
+      }
+    
+    
+  }
+

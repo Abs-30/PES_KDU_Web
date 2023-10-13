@@ -1,0 +1,55 @@
+#carouselTeam .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  }
+  #carouselTeam .carousel-inner {
+    padding: 1em;
+  }
+
+  #carouselTeam .card-title {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.18);
+    
+    justify-content: center ;
+
+  }
+  #carouselTeam .carousel-control-prev,
+  #carouselTeam .carousel-control-next {
+    background-color: #656565;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #carouselTeam .carousel-control-prev span,
+  .carousel-control-next span {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  @media screen and (min-width: 577px) {
+    #carouselTeam .cards-wrapper {
+      display: flex;
+    }
+    #carouselTeam .card {
+      margin: 0 0.5em;
+      width: calc(100% / 2);
+    }
+    #carouselTeam .image-wrapper {
+      height: 20vw;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    #carouselTeam .card:not(:first-child) {
+      display: none;
+    }
+  }
+  
+  #carouselTeam .image-wrapper img {
+    max-width: 100%;
+    max-height: 130%;
+  }
+  
