@@ -6,7 +6,10 @@ body {
     padding: 0px;
 }
 
-
+.navbar-brand strong {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700; 
+}
 
 .video-container {
     position: relative;
