@@ -1,3 +1,4 @@
+
 body {
     background-color: #ffffff;
     min-height: 100vh;
@@ -87,28 +88,8 @@ body {
     }
 }
 
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
 
-.navbar-header {
-    display: flex;
-    align-items: center;
-}
 
-.navbar-logo {
-    float: right;
-    margin-right: 20px;
-    /* Adjust the margin as needed */
-    width: 40px;
-    height: auto;
-}
-
-.container-fluid {
-    width: 100%;
-}
 
 .video-container {
     position: relative;
