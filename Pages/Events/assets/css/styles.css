@@ -39,6 +39,7 @@ body {
 
 .tz-gallery .lightbox img {
     width: 100%;
+
     border-radius: 0;
     position: relative;
 }
