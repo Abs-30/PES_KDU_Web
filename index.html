@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/Bold-BS4-Image-Caption-Hover-Effect-3.css">
 
     <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    src="assets/js/jquery.min.js"></script>
 
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="TklUsDNDTHFRGXudwE_WtMULIBp3xPF21lt9tCHYcOU"/>
@@ -31,7 +31,9 @@
     
 
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+
         <div class="container px-4 px-lg-5">
+            
             <a class="navbar-brand" href="#page-top"><img class="navbar-logo" src="assets/img/3.png" alt="Logo" width="64" height="80"> PES KDU </a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive"
                 aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars-staggered fa-lg"></i></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -44,6 +46,8 @@
             </div>
         </div>
     </nav>
+
+    
     <header class="masthead">
 
         <div class="container d-flex justify-content-center align-items-center px-4 px-lg-5 h-70">
@@ -73,7 +77,7 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8">
-                    <h1 class="text-white mb-4" style="font-family:'DM Sans', sans-serif">About us</h1>
+                    <h1 class="text-white mb-4" style="font-family:'DM Sans', sans-serif">ABOUT US</h1>
                     <h4 class="text-white mb-4"></h4>
                     <p class="text-white-50" style="font-family:'DM Sans', sans-serif;"> The Power &amp; Energy Society (PES) provides the world's largest forum for sharing the latest in technological developments in the electric power industry, for developing standards that guide the development and construction of equipment
                         and systems. Our vision and mission is to enhance the knowledge of the undergraduates following an Engineering bachelor's degree program related to electric power and energy, by providing a platform to learn new skills, engage
@@ -93,7 +97,7 @@
                     <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
-                    <h1 style="text-align: center;font-family: 'DM Sans', sans-serif;font-weight: bold;margin-top: 22px;padding-bottom: 5px;padding-top: 15px;margin-bottom: 12px;">Events</h1>
+                    <h1 class="mb-3 mt-3 text-center" style="font-family: 'DM Sans', sans-serif;font-weight: bold; ">EVENTS</h1>
                     <div class="carousel-item active" data-bs-interval="4000"><img class="d-block w-100" src="Pages/Events/2023-24/img/Future/1.jpg" alt="Slide 2">
                         <div class="d-none d-md-block carousel-caption">
                             <h5>Future Trends In Engineering Guest Lecture</h5>
@@ -180,7 +184,7 @@
             
             <div class="row mt-3">
                 <div class="col-xxl-12" style="text-align:center;">
-                    <a class="btn btn-outline-secondary" href="seemore.html" role="button">See More</a>
+                    <a class="btn btn-outline-success btn-lg me-2" href="seemore.html" role="button">See More</a>
             </div>
         </div>
 
@@ -190,22 +194,22 @@
         <section></section>
         <section></section>
     </section>
-    <section class="about-section bg-dark" id="team" style="padding-bottom:0px;margin-bottom:2px;padding-top:16px;margin-top:-20px;;border-color:var(--bs-border-color-translucent);color:#050044;">
+    <section class="about-section bg-dark" id="team" style="padding-bottom:20px;margin-bottom:15px;padding-top:16px;margin-top:-20px;;border-color:var(--bs-border-color-translucent);color:#050044;">
         <section class="py-4 py-xl-5">
             <div class="container">
                 <div class="text-white bg-dark border-0 border rounded ">
-                    <h2 class="fw-bold text-white mb-3" style="font-family: 'DM Sans', sans-serif;font-weight: bold">OUR TEAM</h2>
-                    <p class="mb-4" style="font-family: 'DM Sans', sans-serif;">The executive committee and the board of directors for the year 2023/24</p>
+                    <h2 class="fw-bold text-white mb-3 text-center" style="font-family: 'DM Sans', sans-serif;font-weight: bold">OUR TEAM</h2>
+                    <p class="mb-4 text-center" style="font-family: 'DM Sans', sans-serif;">The executive committee and the board of directors for the year 2023/24</p>
                     <div id="team-placeholder">
                     </div>
             
                     <script>
-                      $.get("/Pages/Team/teamcarousel.html", function(data){
+                      $.get("teamcarousel.html", function(data){
                           $("#team-placeholder").replaceWith(data);
                       });
                   </script>
             
-                    <div class="text-center mt-5 mb-3"><a class="btn btn-primary btn-lg me-2" role="button" href="Pages/Team/teams-2023-24.html">View all members</a></div>
+                    <div class="text-center mt-3 "><a class="btn btn-outline-success btn-lg me-2" role="button" href="Pages/Team/teams-2023-24.html">View all members</a></div>
                 </div>
                 
             </div>
@@ -213,8 +217,8 @@
         </section>
         
     </section>
-    <h2 class="fw-bold text-white mb-3" id="signup" style="text-align:center;font-family:'DM Sans', sans-serif;">Contacts</h2>
-    <section class="bg-black contact-section" style="padding-top:90px;background:linear-gradient(#050044, #050044), var(--bs-indigo);margin-top:-80px;padding-bottom:0px;margin-bottom:19px;">
+    <h2 class="fw-bold text-white mb-3" id="signup" style="text-align:center;font-family:'DM Sans', sans-serif;">CONTACTS</h2>
+    <section class="bg-black contact-section" style="padding-top:90px;background:linear-gradient(#050044, #050044), var(--bs-indigo);margin-top:-80px;padding-bottom:30px;">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5">
                 <div class="col-md-4 mb-3 mb-md-0">
@@ -258,7 +262,17 @@
 
                 </div>
     </section>
-    <footer class="text-center text-white-50 bg-black footer small " style="background:linear-gradient(#050044, #050044);margin-bottom:-42px;padding-bottom:44px;margin-top:-53px; "><span>Copyright © PES KDU 2023/24</span></footer>
+
+    
+    
+
+
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 " style="background-color:green">
+        <span class="mb-3 text-white ">Copyright © PES KDU 2023/24</span>
+    </footer>
+  
+    
+
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/scripts.js "></script>
     

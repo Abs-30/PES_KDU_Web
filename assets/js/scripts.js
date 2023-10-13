@@ -91,3 +91,4 @@ $(document).ready(function() {
         $(".slider-container").css("transform", "translateX(0)");
     }
 });
+

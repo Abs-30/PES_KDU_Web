@@ -4811,6 +4811,8 @@ fieldset:disabled .btn {
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
 
+
+
 .navbar>.container,
 .navbar>.container-fluid,
 .navbar>.container-sm,
@@ -15338,6 +15340,19 @@ body {
   }
 
 
+  #carouselDark .shadow-right-carousel:hover {
+    color: #32cd32;
+
+  }
+
+  #carouselDark .shadow-left-carousel:hover {
+    color: #32cd32;
+
+  }
+
+
+
+
 
   
 #carouselDark .carousel-fade {
@@ -15549,8 +15564,8 @@ body {
 #carouselTeam .card {
     border: none;
     border-radius: 10px;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    height: 520px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.58);
+    height: auto;
     
   }
   #carouselTeam .carousel-inner {
@@ -15567,13 +15582,33 @@ body {
 
   #carouselTeam .carousel-control-prev,
   #carouselTeam .carousel-control-next {
-    background-color: #656565;
+    background-color: #001000;
     width: 6vh;
     height: 6vh;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
   }
+
+  #carouselTeam .shadow-right-carousel {
+    margin-left: .8vh;
+
+  }
+
+  #carouselTeam .shadow-right-carousel:hover {
+    color: #32cd32;
+
+  }
+
+  #carouselTeam .shadow-left-carousel {
+    margin-left: .8vh;
+
+  }
+  #carouselTeam .shadow-left-carousel:hover {
+    color: #32cd32;
+
+  }
+
   #carouselTeam .carousel-control-prev span,
   .carousel-control-next span {
     width: 1.5rem;
@@ -15598,7 +15633,11 @@ body {
   }
 
   #carouselTeam .image-wrapper {
-    margin-bottom: 75px;
+    margin-bottom: 85px;
+  }
+
+  #carouselTeam .card-body p {
+    margin-top: -15px;
   }
   
   #carouselTeam .image-wrapper img {
@@ -15616,7 +15655,7 @@ body {
     }
 
     #carouselTeam .card {
-        height: 55vh;
+        
       }
 
       #carouselTeam .image-wrapper img {
@@ -15632,3 +15671,4 @@ body {
     
     
   }
+
