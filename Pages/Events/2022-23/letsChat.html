@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/galleryCard.css">
+    <link rel="stylesheet" href="../assets/css/baguetteBox.min.css">
     <title>Lets' Chat</title>
     <link rel="icon" type="image/x-icon" href="../assets/img/Whitelogo_small.png" />
-    <script src="https://www.youtube.com/iframe_api"></script>
-
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,69 +24,81 @@
             <div id="loading-spinner"></div>
         </div>
     </div>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header text-center w-100">
-                <a class="navbar-brand" href="../../../seemore.html"><i class="glyphicon glyphicon-chevron-left"></i> Back</a>
 
-            </div>
-        </div>
-    </nav>
-    <div class="container mt-5 text-white text-center p-4">
-        <h2>Lets' Chat</h2>
-        <p>The “Let’s Chat” session organized by IEEE PES KDU was a crucial and timely gathering aimed at addressing the pressing issue of the current power crisis in the country. 
+    
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top border-bottom shadow-sm">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars-staggered"></i><span class=""></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <a href="../../../seemore.html">
+                      <button class="btn btn-outline-success fw-bold m-2 shadow-sm"><i class="me-2 fa-solid fa-circle-arrow-left fa-lg"></i>Back To Events</button>
+                  </a>
+                  <a href="../../../index.html">
+                    <button class="btn btn-outline-success fw-bold m-2 shadow-sm"><i class="fa-solid fa-home fa-lg"></i></button>
+                </a>
+              </div>
+          </div>
+          <a class="navbar-brand" href="#"><strong> PES KDU</strong><img class="ms-3" src="../assets/img/2.png" alt="Logo" width="90"></a>
+      </div>
+  </nav>
+  
+  
+
+    <div class="container-fluid text-center mt-5 p-5 bg-dark text-white mb-5">
+        <h2 class="mt-4"><strong>Lets' Chat</strong></h2>
+        <p class="mt-3">The “Let’s Chat” session organized by IEEE PES KDU was a crucial and timely gathering aimed at addressing the pressing issue of the current power crisis in the country. 
             Held on 19th of July 2022, the session brought different personalities to a friendly discussion about the prevailing power crisis within the country. 
             All were set in finding solutions such as solar PV and electricity generation using wind and also mental health impacts due to this power crisis was discussed.</p>
-
     </div>
-    <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ojRz6Nl-cZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-
 
     <section>
 
-        <!--Carousel Gallery-->
-        <div class="tz-gallery">
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="img/LetsChat/1 (2).jpg">
-                        <img src="img/LetsChat/1 (2).jpg" alt="Image">
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="img/LetsChat/1 (1).jpg">
-                        <img src="img/LetsChat/1 (1).jpg" alt="Image">
-                    </a>
-                </div>
-
-            </div>
+        
+        <div class="video-container">
+            <iframe width="560" height="315" style="padding-bottom: 20px;" src="https://www.youtube.com/embed/ojRz6Nl-cZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+
+<div class="container gallery">
+  <a href="img/LetsChat/1 (1).jpg" class="card">
+    <img src="img/LetsChat/1 (1).jpg">
+  </a>
+
+  <a href="img/LetsChat/1 (2).jpg" class="card">
+    <img src="img/LetsChat/1 (2).jpg">
+  </a>
+
+  
+</div>
+
+    
     </section>
 
-    <footer class="footer custom-footer-bg text-white text-center py-3">
-        <p>Copyright © PES 2023/24</p>
-    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script src="../assets/js/baguetteBox.min.js"></script>
     <script>
-        baguetteBox.run('.tz-gallery');
+      baguetteBox.run('.gallery');
     </script>
-
-    <script src="assets/js/script.js"></script>
     <script>
-        window.addEventListener('load', function() {
-            var loadingOverlay = document.getElementById('loading-overlay');
-            loadingOverlay.style.opacity = '0';
-            setTimeout(function() {
-                loadingOverlay.style.display = 'none';
-            }, 1000); // Delay the removal of the loading overlay to allow a fade-out effect
-        });
+      
     </script>
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.js"></script>
 
+
+
+<footer class="d-flex flex-wrap justify-content-center align-items-center py-3 mt-5 " style="background-color:green">
+  <span class="mb-3 text-white ">Copyright © PES KDU 2023/24</span>
+
+</footer>
+
+
+
+    
 </body>
-
-</html>
 
 </html>
