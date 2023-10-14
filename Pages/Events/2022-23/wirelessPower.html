@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/galleryCard.css">
+    <link rel="stylesheet" href="../assets/css/baguetteBox.min.css">
     <title>Wireless Power</title>
     <link rel="icon" type="image/x-icon" href="../assets/img/Whitelogo_small.png" />
-
-
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,54 +24,67 @@
             <div id="loading-spinner"></div>
         </div>
     </div>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header text-center w-100">
-                <a class="navbar-brand" href="../../../seemore.html"><i class="glyphicon glyphicon-chevron-left"></i> Back</a>
 
-            </div>
-        </div>
-    </nav>
-    <div class="container mt-5 text-white text-center p-4">
-        <h2>Guest Lecture on Wireless Power Transmission</h2>
-        <p>The online event organized by IEEE PES KDU on “Say Goodbye to the Mess of Cables: exploring Wireless Power Transmission” was a highly engaging and enlightening session. 
+    
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top border-bottom shadow-sm">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars-staggered"></i><span class=""></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <a href="../../../seemore.html">
+                      <button class="btn btn-outline-success fw-bold m-2 shadow-sm"><i class="me-2 fa-solid fa-circle-arrow-left fa-lg"></i>Back To Events</button>
+                  </a>
+                  <a href="../../../index.html">
+                    <button class="btn btn-outline-success fw-bold m-2 shadow-sm"><i class="fa-solid fa-home fa-lg"></i></button>
+                </a>
+              </div>
+          </div>
+          <a class="navbar-brand" href="#"><strong> PES KDU</strong><img class="ms-3" src="../assets/img/2.png" alt="Logo" width="90"></a>
+      </div>
+  </nav>
+  
+  
+
+    <div class="container-fluid text-center mt-5 p-5 bg-dark text-white mb-5">
+        <h2 class="mt-4"><strong>Guest Lecture on Wireless Power Transmission</strong></h2>
+        <p class="mt-3">The online event organized by IEEE PES KDU on “Say Goodbye to the Mess of Cables: exploring Wireless Power Transmission” was a highly engaging and enlightening session. 
             The event took place on 24th October 2022, and it drew a diverse audience interested in the latest advancements in power transmission technology. 
             Eng. Devaka Jayawardana, a distinguished expert in this field, served as the keynote speaker for the event. 
             He highlighted the major challenges associated with traditional wired power transmission and how wireless solutions could revolutionize. 
             Overall, this online event on wireless power transmission was a grand success, offering attendees a glimpse into the future of power technology.</p>
-            
     </div>
-    
-    <section>
-        <div class="container video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/spWmLW60FWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    </section>
 
+  
+   
 
-    <div class="tz-gallery">
+        <section>
+            <div class="container video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/spWmLW60FWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
         
-    </div>
-    <footer class="footer custom-footer-bg text-white text-center py-3">
-        <p>Copyright © PES 2023/24</p>
-    </footer>
+            
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.tz-gallery');
-    </script>
-
-    <script src="../assets/js/script.js"></script>
-    <script>
-        window.addEventListener('load', function() {
-            var loadingOverlay = document.getElementById('loading-overlay');
-            loadingOverlay.style.opacity = '0';
-            setTimeout(function() {
-                loadingOverlay.style.display = 'none';
-            }, 1000); // Delay the removal of the loading overlay to allow a fade-out effect
-        });
-    </script>
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-</body>
-
-</html>
+        
+        
+            
+            <script src="../assets/js/bootstrap.min.js"></script>
+            <script src="../assets/js/script.js"></script>
+        
+        
+        
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 mt-5 " style="background-color:green">
+          <span class="mb-3 text-white ">Copyright © PES KDU 2023/24</span>
+        
+        </footer>
+        
+        
+        
+            
+        </body>
+        
+        </html>
