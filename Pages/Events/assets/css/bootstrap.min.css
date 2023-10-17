@@ -4545,6 +4545,18 @@ fieldset:disabled .btn {
     white-space: nowrap
 }
 
+@media (min-width:992px){
+.navbar-large {
+    display: none;
+}
+}
+
+@media (max-width:991px) {
+.navbar-small{
+    display: none;
+}
+}
+
 .navbar-brand:focus,
 .navbar-brand:hover {
     color: var(--bs-navbar-brand-hover-color)
@@ -4809,6 +4821,7 @@ fieldset:disabled .btn {
     .navbar-expand-xl {
         flex-wrap: nowrap;
         justify-content: flex-start
+        
     }
 
     .navbar-expand-xl .navbar-nav {

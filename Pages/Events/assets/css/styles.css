@@ -11,6 +11,17 @@ body {
     font-weight: 700; 
 }
 
+body p {
+    color: #ababab;
+    font-family: "Muli", arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    
+  }
+
+  
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
