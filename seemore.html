@@ -1,417 +1,305 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
-        <title>All Events</title>
-        <link rel="icon" type="image/x-icon"
-            href="assets/img/Whitelogo_small.png">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <title>All Events</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/Whitelogo_small.png">
 
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=DM+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans&amp;display=swap">
 
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet"
-            href="assets/css/Bold-BS4-Image-Caption-Hover-Effect-3.css">
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Bold-BS4-Image-Caption-Hover-Effect-3.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <div id="loading-overlay">
-            <div class="loading-content">
-                <img src="assets/img/3.png" width="256px" height="auto"
-                    style="padding-bottom: 70px;">
-                <div id="loading-spinner"></div>
-            </div>
+    <div id="loading-overlay">
+        <div class="loading-content">
+            <img src="assets/img/3.png" width="256px" height="auto" style="padding-bottom: 70px;">
+            <div id="loading-spinner"></div>
         </div>
+    </div>
 
-        <section>
-            <!-- Navbar -->
+    <section>
+        <!-- Navbar -->
 
-            <nav
-                class="navbar navbar-expand-lg bg-light fixed-top border-bottom shadow-sm">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars-staggered"></i><span class></span>
-                    </button>
-                    <div class="collapse navbar-collapse"
-                        id="navbarSupportedContent">
-                        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top border-bottom shadow-sm">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered"></i><span class></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                            <a href="index.html">
-                                <button
-                                    class="btn btn-outline-success fw-bold m-2 shadow-sm"><i
-                                        class="fa-solid fa-home fa-lg"></i></button>
-                            </a>
+                        <a href="index.html">
+                            <button class="btn btn-outline-success fw-bold m-2 shadow-sm"><i
+                                    class="fa-solid fa-home fa-lg"></i></button>
+                        </a>
 
 
-                        </div>
                     </div>
-                    <a class="navbar-brand" href="#">PES KDU<img class="ms-3"
-                            src="../assets/img/2.png" alt="Logo" width="90"></a>
                 </div>
-            </nav>
+                <a class="navbar-brand" href="#">PES KDU<img class="ms-3" src="../assets/img/2.png" alt="Logo"
+                        width="90"></a>
+            </div>
+        </nav>
 
-            <header class="bg-dark" style="height: 400px;">
+        <header class="bg-dark" style="height: 400px;">
 
-                <div class="container justify-content-center align-items-center">
-                    <div class=" justify-content-center">
+            <div class="container justify-content-center align-items-center">
+                <div class=" justify-content-center">
 
-                        <h1
-                            class="text-uppercase mx-auto my-0 text-white text-center "
-                            style="font-family:'DM Sans', sans-serif;padding-top:200px; font-size: 350%;">Our
-                            Events</h1>
+                    <h1 class="text-uppercase mx-auto my-0 text-white text-center "
+                        style="font-family:'DM Sans', sans-serif;padding-top:200px; font-size: 350%;">Our
+                        Events</h1>
 
-                        <ul
-                            class="nav nav-pills mb-3 d-flex justify-content-center mt-3"
-                            id="pills-tab"
-                            role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button
-                                    class="btn  btn-outline-success nav-link active"
-                                    id="pills-home-tab" data-bs-toggle="pill"
-                                    data-bs-target="#I2023" type="button"
-                                    role="tab"
-                                    aria-controls="pills-home"
-                                    aria-selected="true">2023/24</button>
-                            </li>
-                            <li class="nav-item ms-2 " role="presentation">
-                                <button
-                                    class="btn  btn-outline-success nav-link "
-                                    id="pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#I2022" type="button"
-                                    role="tab"
-                                    aria-controls="pills-profile"
-                                    aria-selected="false">2022/23</button>
-                            </li>
+                    <ul class="nav nav-pills mb-3 d-flex justify-content-center mt-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="btn  btn-outline-success nav-link active" id="pills-home-tab"
+                                data-bs-toggle="pill" data-bs-target="#I2023" type="button" role="tab"
+                                aria-controls="pills-home" aria-selected="true">2023/24</button>
+                        </li>
+                        <li class="nav-item ms-2 " role="presentation">
+                            <button class="btn  btn-outline-success nav-link " id="pills-profile-tab"
+                                data-bs-toggle="pill" data-bs-target="#I2022" type="button" role="tab"
+                                aria-controls="pills-profile" aria-selected="false">2022/23</button>
+                        </li>
 
-                        </ul>
+                    </ul>
 
-                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="I2023" role="tabpanel"
-            aria-labelledby="pills-home-tab" tabindex="0">
-            <h2 id="2023/24" class="text-blk section-head-text mt-4"
-                style=" text-align: center; ">
-                <strong>2023/24</strong>
-            </h2>
-
-            <section>
-                <div>
-                    <div class="container-fluid py-5 "
-                        style="margin-top: -40px; ">
-                        <div class="row ">
-                            <div class="col-md-6 mb-lg-0 "
-                                style="padding:10px; ">
-                                <a
-                                    href="Pages/Events/2023-24/MicroGrids.html">
-                                    <div
-                                        class="text-white hover hover-3 rounded ">
-                                        <img
-                                            src="Pages/Events/2023-24/img/microgrids/1.jpg"
-                                            alt="image ">
-                                        <div class="hover-overlay "></div>
-                                        <div class="hover-3-content px-5 py-4 ">
-                                            <h2
-                                                class="text-uppercase hover-3-title mb-0 "
-                                                style="font-weight:bold; "><span
-                                                    class="fw-light ">Microgrids&nbsp;</span>Guest lecture</h2>
-                                            <p
-                                                class="fw-light hover-3-description mb-0 ">An inspiring session by Prof.Lindula</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!--
-                            <div class="col-md-6 mb-lg-0 "
-                                style="padding:10px; ">
-                                <a href="Pages/Events/2023-24/AnnualGeneralMeeting.html">
-                                    <div
-                                        class="text-white hover hover-3 rounded ">
-                                        <img
-                                            src="Pages/Events/2023-24/img/AGM/1.jpg "
-                                            alt="image ">
-                                        <div class="hover-overlay "></div>
-                                        <div class="hover-3-content px-5 py-4 ">
-                                            <h2
-                                                class="text-uppercase hover-3-title mb-0 "
-                                                style="font-weight:bold; "><span
-                                                    class="fw-light ">Annual General Meeting&nbsp;</span>'23</h2>
-                                            <p
-                                                class="fw-light hover-3-description mb-0 "></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>-->
-                        </div>
-                        
-                        <div class="row ">
-                            <div class="col-md-6 mb-lg-0 "
-                                style="padding:10px; ">
-                                <a
-                                    href="Pages/Events/2023-24/Genesiz23.html">
-                                    <div
-                                        class="text-white hover hover-3 rounded ">
-                                        <img
-                                            src="Pages/Events/2023-24/img/Genesiz23/1.jpg"
-                                            alt="image ">
-                                        <div class="hover-overlay "></div>
-                                        <div class="hover-3-content px-5 py-4 ">
-                                            <h2
-                                                class="text-uppercase hover-3-title mb-0 "
-                                                style="font-weight:bold; "><span
-                                                    class="fw-light ">Genesiz '23&nbsp;</span>By ERIC KDU</h2>
-                                            <p
-                                                class="fw-light hover-3-description mb-0 ">Collaboration Inter-University Event</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 mb-lg-0 "
-                                style="padding:10px; ">
-                                <a href="Pages/Events/2023-24/AnnualGeneralMeeting.html">
-                                    <div
-                                        class="text-white hover hover-3 rounded ">
-                                        <img
-                                            src="Pages/Events/2023-24/img/AGM/1.jpg "
-                                            alt="image ">
-                                        <div class="hover-overlay "></div>
-                                        <div class="hover-3-content px-5 py-4 ">
-                                            <h2
-                                                class="text-uppercase hover-3-title mb-0 "
-                                                style="font-weight:bold; "><span
-                                                    class="fw-light ">Annual General Meeting&nbsp;</span>'23</h2>
-                                            <p
-                                                class="fw-light hover-3-description mb-0 "></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row ">
-                            <div class="col-md-6 mb-lg-0 "
-                                style="padding:10px; ">
-                                <a
-                                    href="Pages/Events/2023-24/FutureTrends.html ">
-                                    <div
-                                        class="text-white hover hover-3 rounded ">
-                                        <img
-                                            src="Pages/Events/2023-24/img/Future/1.jpg"
-                                            alt="image ">
-                                        <div class="hover-overlay "></div>
-                                        <div class="hover-3-content px-5 py-4 ">
-                                            <h2
-                                                class="text-uppercase hover-3-title mb-0 "
-                                                style="font-weight:bold; "><span
-                                                    class="fw-light ">Future
-                                                    Trends &nbsp;</span>In
-                                                Engineering</h2>
-                                            <p
-                                                class="fw-light hover-3-description mb-0 ">Guest
-                                                Lecture By Prof.Chandima Gomes</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-6 mb-lg-0 "
-                                style="padding:10px; ">
-                                <a href="Pages/Events/2023-24/warna23.html">
-                                    <div
-                                        class="text-white hover hover-3 rounded ">
-                                        <img
-                                            src="Pages/Events/2023-24/img/warna/1.jpg "
-                                            alt="image ">
-                                        <div class="hover-overlay "></div>
-                                        <div class="hover-3-content px-5 py-4 ">
-                                            <h2
-                                                class="text-uppercase hover-3-title mb-0 "
-                                                style="font-weight:bold; "><span
-                                                    class="fw-light ">වර්ණ&nbsp;</span>'23</h2>
-                                            <p
-                                                class="fw-light hover-3-description mb-0 ">Magnet
-                                                Wax Painting stall at art
-                                                exhibition by FOE ART Circle</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="tab-pane fade" id="I2022" role="tabpanel"
-            aria-labelledby="pills-profile-tab" tabindex="0">
-            <h2 id="2022/23" class="text-blk section-head-text mt-4"
-                style=" text-align: center; margin-bottom: -20px;">
-                <strong>2022/23</strong>
-            </h2>
-
-            <section>
-                <div class="container-fluid py-5 ">
-                    <div class="row ">
-                        <div class="col-md-6 mb-lg-0 "
-                            style="padding:10px; ">
-                            <a
-                                href="Pages/Events/2022-23/EE-awareness.html ">
-                                <div
-                                    class="text-white hover hover-3 rounded ">
-                                    <img
-                                        src="Pages/Events/2022-23/img/EE-Awareness/1 (6).jpg "
-                                        alt="image ">
-                                    <div class="hover-overlay "></div>
-                                    <div
-                                        class="hover-3-content px-5 py-4 ">
-                                        <h2
-                                            class="text-uppercase hover-3-title mb-0 "
-                                            style="font-weight:bold; "><span
-                                                class="fw-light ">Electrical&nbsp;</span>
-                                            Awareness&nbsp;</h2>
-                                        <p
-                                            class="fw-light hover-3-description mb-0 ">A
-                                            EE workshop for the new
-                                            intake(40) </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 mb-lg-0 "
-                            style="padding:10px; ">
-                            <a
-                                href="Pages/Events/2022-23/Samanalawewa.html ">
-                                <div
-                                    class="text-white hover hover-3 rounded ">
-                                    <img
-                                        src="Pages/Events/2022-23/img/Samanalawewa/1 (1).jpg "
-                                        alt="image ">
-                                    <div class="hover-overlay "></div>
-                                    <div
-                                        class="hover-3-content px-5 py-4 ">
-                                        <h2
-                                            class="text-uppercase hover-3-title mb-0 "
-                                            style="font-weight:bold; "><span
-                                                class="fw-light ">Samanalawewa&nbsp;</span>
-                                            Field Visit&nbsp;</h2>
-                                        <p
-                                            class="fw-light hover-3-description mb-0 ">First
-                                            field visit by PES KDU</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row "
-                        style="padding-top: 0px;margin-top: 0px; ">
-                        <div class="col-md-6 mb-lg-0 "
-                            style="padding:10px; ">
-                            <a
-                                href="Pages/Events/2022-23/wirelessPower.html ">
-                                <div
-                                    class="text-white hover hover-3 rounded ">
-                                    <img
-                                        src="Pages/Events/2022-23/img/Wireless-power/1 (1).png "
-                                        alt="image ">
-                                    <div class="hover-overlay "></div>
-                                    <div
-                                        class="hover-3-content px-5 py-4 ">
-                                        <h2
-                                            class="text-uppercase hover-3-title mb-0 "
-                                            style="font-weight:bold; "><span
-                                                class="fw-light ">Wireless&nbsp;</span>Power&nbsp;</h2>
-                                        <p
-                                            class="fw-light hover-3-description mb-0 ">Guest
-                                            Lecture by Dr. Devaka
-                                            Jayawardana</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 mb-lg-0 "
-                            style="padding:10px; ">
-                            <a
-                                href="Pages/Events/2022-23/letsChat.html ">
-                                <div
-                                    class="text-white hover hover-3 rounded ">
-                                    <img
-                                        src="Pages/Events/2022-23/img/LetsChat/1 (2).jpg "
-                                        alt="image ">
-                                    <div class="hover-overlay "></div>
-                                    <div
-                                        class="hover-3-content px-5 py-4 ">
-                                        <h2
-                                            class="text-uppercase hover-3-title mb-0 "
-                                            style="font-weight:bold; "><span
-                                                class="fw-light ">Lets'&nbsp;</span>Chat&nbsp;</h2>
-                                        <p
-                                            class="fw-light hover-3-description mb-0 ">A
-                                            talk with diffrent
-                                            personalities about the
-                                            power crisis</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-md-6 mb-lg-0 "
-                            style="padding:10px; ">
-                            <a
-                                href="Pages/Events/2022-23/InstallationAwareness.html ">
-                                <div
-                                    class="text-white hover hover-3 rounded ">
-                                    <img
-                                        src="Pages/Events/2022-23/img/InstallationAwareness/1 (6).jpg "
-                                        alt="image ">
-                                    <div class="hover-overlay "></div>
-                                    <div
-                                        class="hover-3-content px-5 py-4 ">
-                                        <h2
-                                            class="text-uppercase hover-3-title mb-0 "
-                                            style="font-weight:bold; "><span
-                                                class="fw-light ">Installation&nbsp;</span>and
-                                            awareness&nbsp;</h2>
-                                        <p
-                                            class="fw-light hover-3-description mb-0 ">The
-                                            first Installation of the
-                                            Second EXCO and BOD of KDU
-                                            PES</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
             </div>
-        </section>
+            </div>
+        </header>
 
-        <footer
-            class="d-flex flex-wrap justify-content-center align-items-center py-3 "
-            style="background-color:green">
-            <span class="mb-3 text-white ">Copyright © PES KDU 2023/24</span>
-        </footer>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="I2023" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <h2 id="2023/24" class="text-blk section-head-text mt-4" style=" text-align: center; ">
+                    <strong>2023/24</strong>
+                </h2>
 
-        <script src="Pages/Team/assets/js/script.js"></script>
+                <section>
+                    <div>
+                        <div class="container-fluid py-5 " style="margin-top: -40px; ">
+                            <div class="row ">
+                                <div class="col-md-6 mb-lg-0 " style="padding:10px; ">
+                                    <a href="Pages/Events/2023-24/cables.html">
+                                        <div class="text-white hover hover-3 rounded ">
+                                            <img src="Pages/Events/2023-24/img/cables/1.jpg " alt="image ">
+                                            <div class="hover-overlay "></div>
+                                            <div class="hover-3-content px-5 py-4 ">
+                                                <h2 class="text-uppercase hover-3-title mb-0 " style="font-weight:bold; "><span
+                                                        class="fw-light ">General&nbsp;</span>Awareness on Cables</h2>
+                                                <p class="fw-light hover-3-description mb-0 ">A hands-on awareness session by Mr.Palitha
+                                                    Ethulgama powered by ACL Cables</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-lg-0 " style="padding:10px; ">
+                                    <a href="Pages/Events/2023-24/MicroGrids.html">
+                                        <div class="text-white hover hover-3 rounded ">
+                                            <img src="Pages/Events/2023-24/img/microgrids/1.jpg" alt="image ">
+                                            <div class="hover-overlay "></div>
+                                            <div class="hover-3-content px-5 py-4 ">
+                                                <h2 class="text-uppercase hover-3-title mb-0 "
+                                                    style="font-weight:bold; "><span
+                                                        class="fw-light ">Microgrids&nbsp;</span>Guest lecture</h2>
+                                                <p class="fw-light hover-3-description mb-0 ">An inspiring session by
+                                                    Prof.Lindula</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
 
-        <script src="assets/js/bootstrap.min.js"></script>
-    </body>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-md-6 mb-lg-0 " style="padding:10px; ">
+                                    <a href="Pages/Events/2023-24/Genesiz23.html">
+                                        <div class="text-white hover hover-3 rounded ">
+                                            <img src="Pages/Events/2023-24/img/Genesiz23/1.jpg" alt="image ">
+                                            <div class="hover-overlay "></div>
+                                            <div class="hover-3-content px-5 py-4 ">
+                                                <h2 class="text-uppercase hover-3-title mb-0 "
+                                                    style="font-weight:bold; "><span class="fw-light ">Genesiz
+                                                        '23&nbsp;</span>By ERIC KDU</h2>
+                                                <p class="fw-light hover-3-description mb-0 ">Collaboration
+                                                    Inter-University Event</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-lg-0 " style="padding:10px; ">
+                                    <a href="Pages/Events/2023-24/AnnualGeneralMeeting.html">
+                                        <div class="text-white hover hover-3 rounded ">
+                                            <img src="Pages/Events/2023-24/img/AGM/1.jpg " alt="image ">
+                                            <div class="hover-overlay "></div>
+                                            <div class="hover-3-content px-5 py-4 ">
+                                                <h2 class="text-uppercase hover-3-title mb-0 "
+                                                    style="font-weight:bold; "><span class="fw-light ">Annual General
+                                                        Meeting&nbsp;</span>'23</h2>
+                                                <p class="fw-light hover-3-description mb-0 "></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-6 mb-lg-0 " style="padding:10px; ">
+                                    <a href="Pages/Events/2023-24/FutureTrends.html ">
+                                        <div class="text-white hover hover-3 rounded ">
+                                            <img src="Pages/Events/2023-24/img/Future/1.jpg" alt="image ">
+                                            <div class="hover-overlay "></div>
+                                            <div class="hover-3-content px-5 py-4 ">
+                                                <h2 class="text-uppercase hover-3-title mb-0 "
+                                                    style="font-weight:bold; "><span class="fw-light ">Future
+                                                        Trends &nbsp;</span>In
+                                                    Engineering</h2>
+                                                <p class="fw-light hover-3-description mb-0 ">Guest
+                                                    Lecture By Prof.Chandima Gomes</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 mb-lg-0 " style="padding:10px; ">
+                                    <a href="Pages/Events/2023-24/warna23.html">
+                                        <div class="text-white hover hover-3 rounded ">
+                                            <img src="Pages/Events/2023-24/img/warna/1.jpg " alt="image ">
+                                            <div class="hover-overlay "></div>
+                                            <div class="hover-3-content px-5 py-4 ">
+                                                <h2 class="text-uppercase hover-3-title mb-0 "
+                                                    style="font-weight:bold; "><span
+                                                        class="fw-light ">වර්ණ&nbsp;</span>'23</h2>
+                                                <p class="fw-light hover-3-description mb-0 ">Magnet
+                                                    Wax Painting stall at art
+                                                    exhibition by FOE ART Circle</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="I2022" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <h2 id="2022/23" class="text-blk section-head-text mt-4"
+                    style=" text-align: center; margin-bottom: -20px;">
+                    <strong>2022/23</strong>
+                </h2>
+
+                <section>
+                    <div class="container-fluid py-5 ">
+                        <div class="row ">
+                            <div class="col-md-6 mb-lg-0 " style="padding:10px; ">
+                                <a href="Pages/Events/2022-23/EE-awareness.html ">
+                                    <div class="text-white hover hover-3 rounded ">
+                                        <img src="Pages/Events/2022-23/img/EE-Awareness/1 (6).jpg " alt="image ">
+                                        <div class="hover-overlay "></div>
+                                        <div class="hover-3-content px-5 py-4 ">
+                                            <h2 class="text-uppercase hover-3-title mb-0 " style="font-weight:bold; ">
+                                                <span class="fw-light ">Electrical&nbsp;</span>
+                                                Awareness&nbsp;</h2>
+                                            <p class="fw-light hover-3-description mb-0 ">A
+                                                EE workshop for the new
+                                                intake(40) </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-lg-0 " style="padding:10px; ">
+                                <a href="Pages/Events/2022-23/Samanalawewa.html ">
+                                    <div class="text-white hover hover-3 rounded ">
+                                        <img src="Pages/Events/2022-23/img/Samanalawewa/1 (1).jpg " alt="image ">
+                                        <div class="hover-overlay "></div>
+                                        <div class="hover-3-content px-5 py-4 ">
+                                            <h2 class="text-uppercase hover-3-title mb-0 " style="font-weight:bold; ">
+                                                <span class="fw-light ">Samanalawewa&nbsp;</span>
+                                                Field Visit&nbsp;</h2>
+                                            <p class="fw-light hover-3-description mb-0 ">First
+                                                field visit by PES KDU</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row " style="padding-top: 0px;margin-top: 0px; ">
+                            <div class="col-md-6 mb-lg-0 " style="padding:10px; ">
+                                <a href="Pages/Events/2022-23/wirelessPower.html ">
+                                    <div class="text-white hover hover-3 rounded ">
+                                        <img src="Pages/Events/2022-23/img/Wireless-power/1 (1).png " alt="image ">
+                                        <div class="hover-overlay "></div>
+                                        <div class="hover-3-content px-5 py-4 ">
+                                            <h2 class="text-uppercase hover-3-title mb-0 " style="font-weight:bold; ">
+                                                <span class="fw-light ">Wireless&nbsp;</span>Power&nbsp;</h2>
+                                            <p class="fw-light hover-3-description mb-0 ">Guest
+                                                Lecture by Dr. Devaka
+                                                Jayawardana</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 mb-lg-0 " style="padding:10px; ">
+                                <a href="Pages/Events/2022-23/letsChat.html ">
+                                    <div class="text-white hover hover-3 rounded ">
+                                        <img src="Pages/Events/2022-23/img/LetsChat/1 (2).jpg " alt="image ">
+                                        <div class="hover-overlay "></div>
+                                        <div class="hover-3-content px-5 py-4 ">
+                                            <h2 class="text-uppercase hover-3-title mb-0 " style="font-weight:bold; ">
+                                                <span class="fw-light ">Lets'&nbsp;</span>Chat&nbsp;</h2>
+                                            <p class="fw-light hover-3-description mb-0 ">A
+                                                talk with diffrent
+                                                personalities about the
+                                                power crisis</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-6 mb-lg-0 " style="padding:10px; ">
+                                <a href="Pages/Events/2022-23/InstallationAwareness.html ">
+                                    <div class="text-white hover hover-3 rounded ">
+                                        <img src="Pages/Events/2022-23/img/InstallationAwareness/1 (6).jpg "
+                                            alt="image ">
+                                        <div class="hover-overlay "></div>
+                                        <div class="hover-3-content px-5 py-4 ">
+                                            <h2 class="text-uppercase hover-3-title mb-0 " style="font-weight:bold; ">
+                                                <span class="fw-light ">Installation&nbsp;</span>and
+                                                awareness&nbsp;</h2>
+                                            <p class="fw-light hover-3-description mb-0 ">The
+                                                first Installation of the
+                                                Second EXCO and BOD of KDU
+                                                PES</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+    </section>
+
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 " style="background-color:green">
+        <span class="mb-3 text-white ">Copyright © PES KDU 2023/24</span>
+    </footer>
+
+    <script src="Pages/Team/assets/js/script.js"></script>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
 
 </html>
