@@ -24,6 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
             navbar.classList.add('navbar-trans');
         }
     });
+
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+    });
 });
 
 //navbar icon change
